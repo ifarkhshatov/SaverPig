@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text fill="#0f83d6" layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saver Pig" wrappingWidth="145.9830722808838">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start period" />
+      <DatePicker fx:id="dateFrom" layoutX="14.0" layoutY="65.0" prefHeight="26.0" prefWidth="109.0" />
+      <DatePicker fx:id="dateTo" layoutX="14.0" layoutY="111.0" prefHeight="26.0" prefWidth="109.0" />
+      <Text layoutX="14.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End period" />
+      <Text layoutX="15.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount to save" wrappingWidth="123.26171875" />
+      <TextField fx:id="saveAmount" layoutX="15.0" layoutY="161.0" prefHeight="26.0" prefWidth="109.0" />
+      <Text layoutX="15.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Initial amount" wrappingWidth="123.26171875" />
+      <TextField fx:id="initialAmount" layoutX="15.0" layoutY="213.0" prefHeight="26.0" prefWidth="109.0" />
+      <Text layoutX="15.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expenses" wrappingWidth="123.26171875" />
+      <TextField fx:id="expensesAmount" layoutX="15.0" layoutY="267.0" prefHeight="26.0" prefWidth="109.0" />
+      <Button fx:id="actionBtn" layoutX="33.0" layoutY="332.0" mnemonicParsing="false" text="Calculate" />
+      <Text layoutX="203.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can afford to spend this amount per day:" wrappingWidth="355.51041412353516">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalAmount" fill="#0f83d6" layoutX="203.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="299.26171875">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
